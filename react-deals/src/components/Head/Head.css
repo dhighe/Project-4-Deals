@@ -1,0 +1,10 @@
+.Head-container {
+  background-image: url('http://blog.aditmicrosys.com/wp-content/uploads/2016/01/tech_wishlist-2.png') no-repeat;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}

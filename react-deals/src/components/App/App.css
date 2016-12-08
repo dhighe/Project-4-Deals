@@ -1,0 +1,12 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.App-head {
+  height: 30%;
+}
+
+.App-body {
+  height: 70%;
+}
