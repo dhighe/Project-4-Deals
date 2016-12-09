@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router'
 import Head from '../Head/Head.jsx'
 import Body from '../Body/Body.jsx'
 import style from './App.css'
