@@ -32,6 +32,24 @@ height: 100%;
   margin: 8px;
 }
 
+.Home-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Home-Header {
+  height: 30%;
+}
+
+.Home-Body {
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
 body {
   width: 100vw;
   height: 100vh;

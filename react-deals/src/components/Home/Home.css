@@ -1,0 +1,18 @@
+.Home-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Home-Header {
+  height: 30%;
+}
+
+.Home-Body {
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
