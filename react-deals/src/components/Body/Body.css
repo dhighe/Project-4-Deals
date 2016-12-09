@@ -1,26 +1,24 @@
+.Body-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .Card-container {
 display: flex;
-justify-content: space-around;
+justify-content: center;
 align-items: center;
-flex-flow: wrap row;
-width: 220px;
-
+flex-direction: row;
+flex-wrap: wrap;
+width: 80%;
+height: 100%;
 }
 
 .card-square {
-background-color: green;
-width: 50px;
-height: 50px;
+  height: 20vh;
+  width: 15vw;
+  background-color: green;
+  margin: 8px;
 }
 
-.card-vert-rect {
-background-color: green;
-width: 50px;
-height: 100px;
-}
-
-.card-vert-rect {
-background-color: green;
-height: 100px;
-width: 50px;
-}

@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
 import Head from '../Head/Head.jsx'
 import Body from '../Body/Body.jsx'
-import './App.css'
+import style from './App.css'
 
 export default class App extends Component {
-  render() {
+  render(){
     return(
-      <div className="App-container">
-        <div className="App-head">
+      <div className="App-Container">
+        <h1>Welcome to my App</h1>
+        <div className="App-Header">
           <Head />
         </div>
-        <div className="App-body">
+        <div className="App-Body">
           <Body />
         </div>
+
       </div>
+
     )
   }
 }

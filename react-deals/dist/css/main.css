@@ -1,0 +1,59 @@
+.Head-container {
+  background-image: url('http://blog.aditmicrosys.com/wp-content/uploads/2016/01/tech_wishlist-2.png') no-repeat;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.Body-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card-container {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
+width: 80%;
+height: 100%;
+}
+
+.card-square {
+  height: 20vh;
+  width: 15vw;
+  background-color: green;
+  margin: 8px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.App-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.App-Header {
+  height: 30%;
+}
+
+.App-Body {
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+/*# sourceMappingURL=main.css.map*/
