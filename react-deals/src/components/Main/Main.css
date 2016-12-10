@@ -1,0 +1,24 @@
+
+.Main-Container {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Main-Style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.Main-Search
+.Main-Filter{
+  width: 40%;
+}
+.Main-Product {
+  width: 70%;
+}
+

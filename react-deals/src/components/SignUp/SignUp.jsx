@@ -4,7 +4,7 @@ import style from './SignUp.css';
 export default class SignUp extends Component {
   render(){
     return(
-      <div className="SignUp-Container">
+      <div className="SignUp-Modal">
         <h1>Sign Up because you know you want to...</h1>
         <input type="text" name="f_name" placeholder="First Name" />
         <input type="text" name="l_name" placeholder="Last Name" />

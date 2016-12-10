@@ -11,11 +11,13 @@ export default class Main extends Component {
         <div className="Main-Search">
           <Search />
         </div>
-        <div className="Main-Filter">
-          <Filter />
-        </div>
-        <div className="Main-Product">
-          <Product />
+        <div className="Main-Style">
+          <div className="Main-Filter">
+            <Filter />
+          </div>
+          <div className="Main-Product">
+            <Product />
+          </div>
         </div>
       </div>
     )

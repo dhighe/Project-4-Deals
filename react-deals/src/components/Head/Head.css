@@ -8,3 +8,47 @@
   align-items: center;
   flex-direction: row;
 }
+
+.SignUp-Modal{
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba( 0, 0, 0, .8);
+}
+
+.LogIn-Modal{
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba( 0, 0, 0, .8);
+}
+
+.SignUp-Container {
+  position: absolute;
+  left: 10vw;
+  top: 15vh;
+  background-color: #FAFAFA;
+  width: 80vw;
+  height: 40vw;
+  border: 1px solid #9C9C9C;
+  border-radius: 1.5vw;
+}
+
+.LogIn-Container {
+  position: absolute;
+  left: 10vw;
+  top: 15vh;
+  background-color: #FAFAFA;
+  width: 80vw;
+  height: 40vw;
+  border: 1px solid #9C9C9C;
+  border-radius: 1.5vw;
+}

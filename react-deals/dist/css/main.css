@@ -8,6 +8,50 @@
   align-items: center;
   flex-direction: row;
 }
+
+.SignUp-Modal{
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba( 0, 0, 0, .8);
+}
+
+.LogIn-Modal{
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba( 0, 0, 0, .8);
+}
+
+.SignUp-Container {
+  position: absolute;
+  left: 10vw;
+  top: 15vh;
+  background-color: #FAFAFA;
+  width: 80vw;
+  height: 40vw;
+  border: 1px solid #9C9C9C;
+  border-radius: 1.5vw;
+}
+
+.LogIn-Container {
+  position: absolute;
+  left: 10vw;
+  top: 15vh;
+  background-color: #FAFAFA;
+  width: 80vw;
+  height: 40vw;
+  border: 1px solid #9C9C9C;
+  border-radius: 1.5vw;
+}
 .Body-container {
   width: 100%;
   display: flex;
@@ -50,6 +94,36 @@ height: 100%;
   align-items: center;
   width: 80%;
 }
+.Filter-Container {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Main-Container {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Main-Style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.Main-Search
+.Main-Filter{
+  width: 40%;
+}
+.Main-Product {
+  width: 70%;
+}
+
 body {
   width: 100vw;
   height: 100vh;
