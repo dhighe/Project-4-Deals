@@ -5,6 +5,14 @@ import Main from '../Main/Main.jsx'
 import style from './App.css'
 
 export default class App extends Component {
+
+constructor(props) {
+  super();
+
+  this.state = {
+    user: {},
+  };
+
   render(){
     return(
       <div className="App-Container">
