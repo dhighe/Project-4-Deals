@@ -9,14 +9,20 @@ export default class Main extends Component {
     return(
       <div className="Main-Container">
         <div className="Main-Search">
-          <Search />
+          <Search
+            searchTerm={this.state.searchTerm}
+            handleUpdateSearch={event => this.handleUpdateSearch(event)}
+            handleSubmitSearch={()=> this.handleSubmitSearch()}
+          />
         </div>
         <div className="Main-Style">
           <div className="Main-Filter">
             <Filter />
           </div>
           <div className="Main-Product">
-            <Product />
+            <Product
+              products={this.state.products}
+            />
           </div>
         </div>
       </div>
