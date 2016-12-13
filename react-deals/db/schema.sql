@@ -2,6 +2,7 @@ BEGIN;
 
 DROP TABLE IF EXISTS wishlist;
 DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS products;
 
 CREATE TABLE users(
   user_id SERIAL PRIMARY KEY,
@@ -22,5 +23,16 @@ CREATE TABLE wishlist(
   user_id INT REFERENCES users ON DELETE CASCADE
 );
 
-COMMIT;
+CREATE TABLE products(
+  product_id SERIAL PRIMARY KEY,
+  title VARCHAR NOT NULL,
+  img TEXT NOT NULL,
+  url TEXT NOT NULL,
+  price VARCHAR NOT NULL,
+  category VARCHAR NOT NULL
+);
 
+COPY products (title, img, url, price, category)
+FROM '/Users/donaldhighe/code/wdi/project4/react-deals/db/seeds.csv' with (format csv, delimiter ',');
+
+COMMIT;

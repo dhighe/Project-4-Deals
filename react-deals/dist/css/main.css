@@ -52,6 +52,35 @@
   border: 1px solid #9C9C9C;
   border-radius: 1.5vw;
 }
+.Filter-Container {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Main-Container {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Main-Style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.Main-Filter{
+  width: 40%;
+}
+.Main-Product {
+  width: 70%;
+}
+
 .Body-container {
   width: 100%;
   display: flex;
@@ -79,6 +108,10 @@ height: 100%;
   align-items: center;
   box-shadow: 5px 5px 5px darkgray;
   opacity: 30%;
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 2px #222;
+  text-decoration: none;
 }
 
 .card-square:hover {
@@ -89,96 +122,72 @@ height: 100%;
   background: url('http://www.booooooom.com/wp-content/uploads/2014/08/sony-bluetoothheadphones2.jpg') no-repeat;
   background-size: cover;
   background-position: center;
-  color: white;
-  text-shadow: 2px 2px 2px #222;
 }
 
 #games {
   background: url('http://www.gamechup.com/wp-content/uploads/2013/05/xbox-one-high-res-screenshot.jpg') no-repeat;
   background-size: cover;
   background-position: center;
-  color: white;
-  text-shadow: 2px 2px 2px #222;
 }
 
 #televisions {
   background: url('http://www.technobuffalo.com/wp-content/uploads/2016/01/lg-signature-5.jpeg') no-repeat;
   background-size: cover;
   background-position: center;
-  color: white;
-  text-shadow: 2px 2px 2px #222;
 }
 
 #cameras {
   background: url('http://www.slrphotographyguide.com/images/dslr-camera.jpg') no-repeat;
   background-size: cover;
   background-position: center;
-  color: white;
-  text-shadow: 2px 2px 2px #222;
 }
 
 #computers {
   background: url('http://www.popsci.com/sites/popsci.com/files/styles/large_1x_/public/images/2016/10/surfacehome_6_featurepivotpanel_1_us_v1.jpg?itok=BaQCmX7t&fc=50,50') no-repeat;
   background-size: cover;
   background-position: center;
-  color: white;
-  text-shadow: 2px 2px 2px #222;
 }
 
 #phones {
   background: url('http://cdn.bgr.com/2016/07/iphone-7-dummy.jpg?quality=98&strip=all') no-repeat;
   background-size: cover;
   background-position: center;
-  color: white;
-  text-shadow: 2px 2px 2px #222;
 }
 
 #furniture {
   background: url('http://www.jordans.com/~/media/jordans%20redesign/category/furniture/living%20room/feature-livingroom.ashx?h=397&la=en&w=787&hash=459E0BF41F8262F530321C9DCD02EC818EEDA5E7') no-repeat;
   background-size: cover;
   background-position: center;
-  color: white;
-  text-shadow: 2px 2px 2px #222;
 }
 
 #jewerly {
   background: url('https://ae01.alicdn.com/kf/HTB1B64pMFXXXXaAXXXXq6xXFXXXp/419-Newest-Women-Wedding-Party-font-b-Jewerly-b-font-font-b-Set-b-font-Noble.jpg') no-repeat;
   background-size: cover;
   background-position: center;
-  color: white;
-  text-shadow: 2px 2px 2px #222;
 }
 
 #toys {
   background: url('http://katsadventures.com/wp-content/uploads/2016/09/A_Game_Of_Thrones_board_game_detail.jpg') no-repeat;
   background-size: cover;
   background-position: center;
-  color: white;
-  text-shadow: 2px 2px 2px #222;
 }
 
 #autoparts {
   background: url('https://www.bigbrandwheels.com/images/Versante_Wheels_VE225_22_Inch_-_22x80_Black_Rims_with_Machined_L_18125152254.jpg') no-repeat;
   background-size: cover;
   background-position: center;
-  color: white;
-  text-shadow: 2px 2px 2px #222;
 }
 
 #applicances {
   background: url('https://www.kitchenaid.com/images/global/masthead-major-appliances.jpg') no-repeat;
   background-size: cover;
   background-position: center;
-  color: white;
-  text-shadow: 2px 2px 2px #222;
 }
 
 #clothes {
   background: url('http://media.npr.org/assets/img/2011/10/20/ap1110110135894_custom-de0627c4cbf1d2b4b1a82092520bf7ab99b8ad8a-s900-c85.jpg') no-repeat;
   background-size: cover;
   background-position: center;
-  color: white;
-  text-shadow: 2px 2px 2px #222;
 }
 
 .Home-Container {
@@ -199,36 +208,6 @@ height: 100%;
   align-items: center;
   width: 80%;
 }
-.Filter-Container {
-  display: flex;
-  flex-direction: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.Main-Container {
-  display: flex;
-  flex-direction: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.Main-Style {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  width: 100vw;
-}
-
-.Main-Search
-.Main-Filter{
-  width: 40%;
-}
-.Main-Product {
-  width: 70%;
-}
-
 body {
   width: 100vw;
   height: 100vh;

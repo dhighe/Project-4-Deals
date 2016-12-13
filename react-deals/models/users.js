@@ -52,7 +52,8 @@ function removeUser(req, res, next) {
 }
 
 module.exports = {
-  getPlaylist,
-  saveOneSongToPlaylist,
-  deleteOneSongFromPlaylist,
+  getAllUsers,
+  createUser,
+  updateUser,
+  removeUser,
 };

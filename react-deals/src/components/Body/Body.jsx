@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router'
+import Main from '../Main/Main.jsx'
 import style from './Body.css';
 
 export default class Body extends Component {
@@ -6,12 +8,16 @@ export default class Body extends Component {
     return(
       <div className="Body-container">
         <div className="Card-container">
-          <div className="card-square" id="headphones">
-            <p>Headphones</p>
-          </div>
+          <Link to="/main">
+            <div className="card-square" id="headphones">
+              <p>Headphones</p>
+            </div>
+          </Link>
+          <Link to="/main">
           <div className="card-square" id="cameras">
             <p>Cameras</p>
           </div>
+          </Link>
           <div className="card-square" id="clothes">
             <p>Clothes</p>
           </div>

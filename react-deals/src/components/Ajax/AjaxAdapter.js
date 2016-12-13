@@ -1,3 +1,12 @@
+function indexByKeyName(arr, keyName) {
+  console.log('key')
+  return arr.reduce((obj, el) => {
+    obj[el[keyName]] = el;
+    return obj;
+    console.log(obj);
+  }, {});
+}
+
 export default class AjaxAdapter {
 
   static signUpUser(newUser) {
@@ -11,6 +20,22 @@ export default class AjaxAdapter {
     .then(r=r.json());
   }
 
+  static getAllProducts() {
+    console.log('here');
+    return fetch('/api/db/products/')
+    .then(r => r.json())
+    .then(data => indexByKeyName(data, 'id'));
+  }
+
+  // static getSelectedProdcuts(category) {
+  //   return fetch(`/api/db/products/${category}`)
+  //   .then(r => r.json())
+  //   .then(data => {
+  //   database = data;
+  //   next();
+  // })
+  //   .catch(err => next(err));
+  // }
 }
 
   // static getTask() {

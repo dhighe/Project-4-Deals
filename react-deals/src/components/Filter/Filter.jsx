@@ -5,37 +5,34 @@ export default class Filter extends Component {
   render(){
     return(
       <div className="Filter-Container">
-        <div className="range-slider" data-slider data-options="start: 1; end: 10;">
-          <span className="range-slider-handle" role="slider" tabIndex="0"></span>
-          <span className="range-slider-active-segment"></span>
-          <input type="range" />
-        </div>
-        <div className="range-slider" data-slider data-options="start: 1; end: 10;">
-          <span className="range-slider-handle" role="slider" tabIndex="0"></span>
-          <span className="range-slider-active-segment"></span>
-          <input type="range" />
-        </div>
         <select>
-          <option value="test">Test</option>
-          <option value="test">Test 2</option>
-          <option value="test">Test 3</option>
-          <option value="test">Test 4</option>
+          <option value="next"></option>
+          <option value="next">A to Z</option>
+          <option value="next">Z to A</option>
         </select>
 
         <select>
-          <option value="next">Next Test</option>
-          <option value="next">Next Test 2</option>
-          <option value="next">Next Test 3</option>
-          <option value="next">Next Test 4</option>
+          <option value="last"></option>
+          <option value="last">Lowest Price</option>
+          <option value="last">Highest Price</option>
         </select>
 
         <select>
-          <option value="last">Last Test</option>
-          <option value="last">Last Test 2</option>
-          <option value="last">Last Test 3</option>
-          <option value="last">Last Test 4</option>
+          <option value="category">Headphones</option>
+          <option value="category">Cameras</option>
+          <option value="category">Clothes</option>
+          <option value="category">Televisions</option>
+          <option value="category">Computers</option>
+          <option value="category">Phones</option>
+          <option value="category">Furniture</option>
+          <option value="category">Games</option>
+          <option value="category">Jewerly</option>
+          <option value="category">Toys</option>
+          <option value="category">Auto Parts</option>
+          <option value="category">Applicances</option>
         </select>
       </div>
     )
   }
 }
+

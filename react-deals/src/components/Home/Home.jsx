@@ -11,7 +11,6 @@ export default class Home extends Component {
   render(){
     return(
       <div className="Home-Container">
-          <button><Link to="/main">Main</Link></button>
         <h1>Welcome to My App...</h1>
         <div className="Home-Header">
           <Head

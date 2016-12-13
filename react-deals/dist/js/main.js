@@ -47,7 +47,7 @@
   \**********************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _App=__webpack_require__(/*! ./components/App/App.jsx */ 233);var _App2=_interopRequireDefault(_App);var _Home=__webpack_require__(/*! ./components/Home/Home.jsx */ 235);var _Home2=_interopRequireDefault(_Home);var _Main=__webpack_require__(/*! ./components/Main/Main.jsx */ 241);var _Main2=_interopRequireDefault(_Main);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}_reactDom2.default.render(_react2.default.createElement(_reactRouter.Router,{history:_reactRouter.browserHistory},_react2.default.createElement(_reactRouter.Route,{path:'/',component:_App2.default},_react2.default.createElement(_reactRouter.IndexRoute,{component:_Home2.default}),_react2.default.createElement(_reactRouter.Route,{path:'main',component:_Main2.default}))),document.querySelector('#container'));
+	'use strict';var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _App=__webpack_require__(/*! ./components/App/App.jsx */ 233);var _App2=_interopRequireDefault(_App);var _Home=__webpack_require__(/*! ./components/Home/Home.jsx */ 234);var _Home2=_interopRequireDefault(_Home);var _Main=__webpack_require__(/*! ./components/Main/Main.jsx */ 238);var _Main2=_interopRequireDefault(_Main);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}_reactDom2.default.render(_react2.default.createElement(_reactRouter.Router,{history:_reactRouter.browserHistory},_react2.default.createElement(_reactRouter.Route,{path:'/',component:_App2.default},_react2.default.createElement(_reactRouter.IndexRoute,{component:_Home2.default}),_react2.default.createElement(_reactRouter.Route,{path:'main',component:_Main2.default}))),document.querySelector('#container'));
 
 /***/ },
 /* 1 */
@@ -3385,7 +3385,7 @@
 	
 	var ReactComponentTreeHook;
 	
-	if (typeof process !== 'undefined' && ({"NODE_ENV":"development"}) && ("development") === 'test') {
+	if (typeof process !== 'undefined' && ({"PG_HOST":"localhost","PG_PORT":"5432","PG_DATABASE":"deals","PG_USER":"donaldhighe","PG_PASSWORD":"password","API_KEY":"DonaldHi-project4-PRD-745e91339-ecaab001","TEST_SID":"ACae3d14d5904889b4a699f42da0167442","TEST_AUTH":"642dcbece99504e445f529e0566b92d9"}) && ("development") === 'test') {
 	  // Temporary hack.
 	  // Inline requires don't work well with Jest:
 	  // https://github.com/facebook/react/issues/7240
@@ -14994,7 +14994,7 @@
 	
 	var ReactComponentTreeHook;
 	
-	if (typeof process !== 'undefined' && ({"NODE_ENV":"development"}) && ("development") === 'test') {
+	if (typeof process !== 'undefined' && ({"PG_HOST":"localhost","PG_PORT":"5432","PG_DATABASE":"deals","PG_USER":"donaldhighe","PG_PASSWORD":"password","API_KEY":"DonaldHi-project4-PRD-745e91339-ecaab001","TEST_SID":"ACae3d14d5904889b4a699f42da0167442","TEST_AUTH":"642dcbece99504e445f529e0566b92d9"}) && ("development") === 'test') {
 	  // Temporary hack.
 	  // Inline requires don't work well with Jest:
 	  // https://github.com/facebook/react/issues/7240
@@ -16237,7 +16237,7 @@
 	
 	var ReactComponentTreeHook;
 	
-	if (typeof process !== 'undefined' && ({"NODE_ENV":"development"}) && ("development") === 'test') {
+	if (typeof process !== 'undefined' && ({"PG_HOST":"localhost","PG_PORT":"5432","PG_DATABASE":"deals","PG_USER":"donaldhighe","PG_PASSWORD":"password","API_KEY":"DonaldHi-project4-PRD-745e91339-ecaab001","TEST_SID":"ACae3d14d5904889b4a699f42da0167442","TEST_AUTH":"642dcbece99504e445f529e0566b92d9"}) && ("development") === 'test') {
 	  // Temporary hack.
 	  // Inline requires don't work well with Jest:
 	  // https://github.com/facebook/react/issues/7240
@@ -16957,7 +16957,7 @@
 	
 	var ReactComponentTreeHook;
 	
-	if (typeof process !== 'undefined' && ({"NODE_ENV":"development"}) && ("development") === 'test') {
+	if (typeof process !== 'undefined' && ({"PG_HOST":"localhost","PG_PORT":"5432","PG_DATABASE":"deals","PG_USER":"donaldhighe","PG_PASSWORD":"password","API_KEY":"DonaldHi-project4-PRD-745e91339-ecaab001","TEST_SID":"ACae3d14d5904889b4a699f42da0167442","TEST_AUTH":"642dcbece99504e445f529e0566b92d9"}) && ("development") === 'test') {
 	  // Temporary hack.
 	  // Inline requires don't work well with Jest:
 	  // https://github.com/facebook/react/issues/7240
@@ -26968,74 +26968,50 @@
   \************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _AjaxAdapter=__webpack_require__(/*! ../Ajax/AjaxAdapter */ 234);var _AjaxAdapter2=_interopRequireDefault(_AjaxAdapter);var _Home=__webpack_require__(/*! ../Home/Home.jsx */ 235);var _Home2=_interopRequireDefault(_Home);var _Main=__webpack_require__(/*! ../Main/Main.jsx */ 241);var _Main2=_interopRequireDefault(_Main);var _App=__webpack_require__(/*! ./App.css */ 251);var _App2=_interopRequireDefault(_App);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var App=function(_Component){_inherits(App,_Component);function App(props){_classCallCheck(this,App);var _this=_possibleConstructorReturn(this,(App.__proto__||Object.getPrototypeOf(App)).call(this));_this.state={searchTerm:'',products:[],currentPage:1,totalResults:0};_this.signUpUser=_this.signUpUser.bind(_this);return _this;}// Handle what is in the input box that will be rendered on the page => Allow users to type in search term
-	_createClass(App,[{key:'handleUpdateSearch',value:function handleUpdateSearch(event){this.setState({searchTerm:event.target.value});}// Handle the call to the OMDB api
-	},{key:'handleSubmitSearch',value:function handleSubmitSearch(){var _this2=this;var page=arguments.length>0&&arguments[0]!==undefined?arguments[0]:1;fetch('/api/products').then(function(r){return r.json();}).then(function(data){_this2.setState({products:data.findItemsByKeywordsResponse[0].searchResult.count,totalResults:data.findItemsByKeywordsResponse[0].searchResult.item,currentPage:page});}).catch(function(err){return console.log('Error: ',err);});}// Edit display information on page with new search items from fetch call
-	},{key:'displayNext',value:function displayNext(){var _this3=this;// If the search results are more then 10 (as only 10 objects are rendered at a time) allow for more results to be retrieve
-	if(this.state.totalResults>this.state.currentPage*15){return(// Create button if the above condition is true
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _AjaxAdapter=__webpack_require__(/*! ../Ajax/AjaxAdapter.js */ 250);var _AjaxAdapter2=_interopRequireDefault(_AjaxAdapter);var _Home=__webpack_require__(/*! ../Home/Home.jsx */ 234);var _Home2=_interopRequireDefault(_Home);var _Main=__webpack_require__(/*! ../Main/Main.jsx */ 238);var _Main2=_interopRequireDefault(_Main);var _App=__webpack_require__(/*! ./App.css */ 251);var _App2=_interopRequireDefault(_App);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var App=function(_Component){_inherits(App,_Component);function App(props){_classCallCheck(this,App);var _this=_possibleConstructorReturn(this,(App.__proto__||Object.getPrototypeOf(App)).call(this));_this.state={searchTerm:'',products:'',currentPage:1,totalResults:0,test:"andrew"};_this.signUpUser=_this.signUpUser.bind(_this);return _this;}// Handle what is in the input box that will be rendered on the page => Allow users to type in search term
+	_createClass(App,[{key:'handleUpdateSearch',value:function handleUpdateSearch(event){this.setState({searchTerm:event.target.value});}// handleSubmitSearch() {
+	//   fetch(`/api/products`)
+	//   .then(r => r.json())
+	//   .then((data) => {
+	//     this.setState({
+	//       products: data.findItemsByKeywordsResponse[0].searchResult.count,
+	//       totalResults: data.findItemsByKeywordsResponse[0].searchResult.item,
+	//     });
+	//   })
+	//   .catch(err => console.log('Error: ',err));
+	// }
+	},{key:'handleSubmitSearch',value:function handleSubmitSearch(){var _this2=this;var API_KEY=("DonaldHi-project4-PRD-745e91339-ecaab001");var authorization=function authorization(){return'Basic '+window.btoa(''+API_KEY);};var authParameters={headers:{Authorization:authorization()}};var EBAY_URL='https://svcs.ebay.com/services/search/FindingService/v1?SECURITY-APPNAME='+API_KEY+'&OPERATION-NAME=findItemsByKeywords&callback=_cb_findItemsByKeywords&keywords='+this.state.search+'&paginationInput.entriesPerPage=15&GLOBAL-ID=EBAY-US&siteid=0';fetch(EBAY_URL,authParameters).then(function(r){return r.json();}).then(function(result){_this2.setState({products:result.findItemsByKeywordsResponse[0].searchResult.count,totalResults:result.findItemsByKeywordsResponse[0].searchResult.item});});}// Edit display information on page with new search items from fetch call
+	},{key:'displayNext',value:function displayNext(){var _this3=this;if(this.state.totalResults>this.state.currentPage*15){return(// Create button if the above condition is true
 	_react2.default.createElement('button',{id:'next-button',onClick:function onClick(){return _this3.handleSubmitSearch(_this3.state.currentPage+1);}},'Next Page'));}}// Edit state to move back to previous page as fetch only calls 10 search items at a time
 	},{key:'displayPrev',value:function displayPrev(){var _this4=this;// Checks to make sure there are pages to go back to, set current page > 1
 	if(this.state.currentPage>1){return(//create button if the above condition is met
 	_react2.default.createElement('button',{id:'prev-button',onClick:function onClick(){return _this4.handleSubmitSearch(_this4.state.currentPage-1);}},'Previous Page'));}}},{key:'signUpUser',value:function signUpUser(f_name,l_name,username,email,password,phonenumber){var _this5=this;_AjaxAdapter2.default.createTask({f_name:f_name,l_name:l_name,username:username,email:email,password:password,phonenumber:phonenumber}).then(function(newUser){// clone existing state
-	var newState=_extends({},_this5.state.user);newState[newUser.id]=newUser;_this5.setState({user:newState});}).catch(function(error){throw error;});}},{key:'render',value:function render(){return _react2.default.createElement('div',{className:'App-Container'},_react2.default.createElement('link',{href:'https://fonts.googleapis.com/css?family=Nunito+Sans',rel:'stylesheet'}),this.props.children&&_react2.default.cloneElement(this.props.children,{state:this.state}));}}]);return App;}(_react.Component);// && React.cloneElement(this.props.children, {state:this.state})
+	var newState=_extends({},_this5.state.user);newState[newUser.id]=newUser;_this5.setState({user:newState});}).catch(function(error){throw error;});}},{key:'componentDidMount',value:function componentDidMount(){var _this6=this;_AjaxAdapter2.default.getAllProducts().then(function(data){return _this6.setState({products:data});}).catch(function(error){throw error;});}},{key:'getSelectedProdcuts',value:function getSelectedProdcuts(){var _this7=this;_AjaxAdapter2.default.getSelectedProdcuts().then(function(data){return _this7.setState({products:data});}).catch(function(error){throw error;});}},{key:'render',value:function render(){return _react2.default.createElement('div',{className:'App-Container'},_react2.default.createElement('link',{href:'https://fonts.googleapis.com/css?family=Nunito+Sans',rel:'stylesheet'}),this.props.children&&_react2.default.cloneElement(this.props.children,{state:this.state}));}}]);return App;}(_react.Component);// && React.cloneElement(this.props.children, {state:this.state})
 	exports.default=App;
 
 /***/ },
 /* 234 */
-/*!********************************************!*\
-  !*** ./src/components/Ajax/AjaxAdapter.js ***!
-  \********************************************/
-/***/ function(module, exports) {
-
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}var AjaxAdapter=function(){function AjaxAdapter(){_classCallCheck(this,AjaxAdapter);}_createClass(AjaxAdapter,null,[{key:'signUpUser',value:function signUpUser(newUser){return fetch('/api/products',{method:'POST',headers:{'Content-type':'application/json; charset=UTF-8'},body:JSON.stringify(newUser)}).then(r=r.json());}}]);return AjaxAdapter;}();// static getTask() {
-	//   return fetch('/tasks')
-	//   .then(r => r.json())
-	//   .then(data => indexByKeyName(data, 'id'));
-	// }
-	// static createTask(newTask) {
-	//   return fetch('/tasks', {
-	//     method:  'POST',
-	//     headers: {
-	//       'Content-type': 'application/json; charset=UTF-8',
-	//     },
-	//     body: JSON.stringify(newTask),
-	//   })
-	//     .then(r => r.json());
-	// }
-	// static delete(id) {
-	//   return fetch(`/tasks/${id}`, {
-	//     method:  'DELETE',
-	//     headers: {
-	//       'Content-type': 'application/json; charset=UTF-8',
-	//     },
-	//   })
-	//     .then(r => r.json());
-	// }
-	exports.default=AjaxAdapter;
-
-/***/ },
-/* 235 */
 /*!**************************************!*\
   !*** ./src/components/Home/Home.jsx ***!
   \**************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _Head=__webpack_require__(/*! ../Head/Head.jsx */ 236);var _Head2=_interopRequireDefault(_Head);var _Body=__webpack_require__(/*! ../Body/Body.jsx */ 238);var _Body2=_interopRequireDefault(_Body);var _Home=__webpack_require__(/*! ./Home.css */ 240);var _Home2=_interopRequireDefault(_Home);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}// import AuthActions from '../AuthAPI/auth_actions.js';
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _Head=__webpack_require__(/*! ../Head/Head.jsx */ 235);var _Head2=_interopRequireDefault(_Head);var _Body=__webpack_require__(/*! ../Body/Body.jsx */ 237);var _Body2=_interopRequireDefault(_Body);var _Home=__webpack_require__(/*! ./Home.css */ 249);var _Home2=_interopRequireDefault(_Home);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}// import AuthActions from '../AuthAPI/auth_actions.js';
 	// import SessionStore from '../AuthAPI/session_store.js';
-	var Home=function(_Component){_inherits(Home,_Component);function Home(){_classCallCheck(this,Home);return _possibleConstructorReturn(this,(Home.__proto__||Object.getPrototypeOf(Home)).apply(this,arguments));}_createClass(Home,[{key:'render',value:function render(){return _react2.default.createElement('div',{className:'Home-Container'},_react2.default.createElement('button',null,_react2.default.createElement(_reactRouter.Link,{to:'/main'},'Main')),_react2.default.createElement('h1',null,'Welcome to My App...'),_react2.default.createElement('div',{className:'Home-Header'},_react2.default.createElement(_Head2.default,{signUpUser:this.props.signUpUser})),_react2.default.createElement('div',{className:'Home-Body'},_react2.default.createElement(_Body2.default,null)));}}]);return Home;}(_react.Component);exports.default=Home;
+	var Home=function(_Component){_inherits(Home,_Component);function Home(){_classCallCheck(this,Home);return _possibleConstructorReturn(this,(Home.__proto__||Object.getPrototypeOf(Home)).apply(this,arguments));}_createClass(Home,[{key:'render',value:function render(){return _react2.default.createElement('div',{className:'Home-Container'},_react2.default.createElement('h1',null,'Welcome to My App...'),_react2.default.createElement('div',{className:'Home-Header'},_react2.default.createElement(_Head2.default,{signUpUser:this.props.signUpUser})),_react2.default.createElement('div',{className:'Home-Body'},_react2.default.createElement(_Body2.default,null)));}}]);return Home;}(_react.Component);exports.default=Home;
 
 /***/ },
-/* 236 */
+/* 235 */
 /*!**************************************!*\
   !*** ./src/components/Head/Head.jsx ***!
   \**************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});exports.default=Head;var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _Head=__webpack_require__(/*! ./Head.css */ 237);var _Head2=_interopRequireDefault(_Head);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function Head(props){var handleSubmit=function handleSubmit(){event.preventDefault();props.signUpUser(event.target.f_name.value,event.target.l_name.value,event.target.username.value,event.target.email.value,event.target.password.value,event.target.phonenumber.value);return false;};// export default class Body extends Component {
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});exports.default=Head;var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _Head=__webpack_require__(/*! ./Head.css */ 236);var _Head2=_interopRequireDefault(_Head);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function Head(props){var handleSubmit=function handleSubmit(){event.preventDefault();props.signUpUser(event.target.f_name.value,event.target.l_name.value,event.target.username.value,event.target.email.value,event.target.password.value,event.target.phonenumber.value);return false;};// export default class Body extends Component {
 	return _react2.default.createElement('div',{className:'Head-container'},_react2.default.createElement('div',{className:'button-container'},_react2.default.createElement('button',{className:'buttons',onClick:function onClick(){document.querySelector('.SignUp-Modal').style.display="block";}},'Sign Up'),_react2.default.createElement('button',{className:'buttons',onClick:function onClick(){document.querySelector('.LogIn-Modal').style.display="block";}},'Log In'),_react2.default.createElement('div',{className:'SignUp-Modal'},_react2.default.createElement('span',{className:'close',onClick:function onClick(){document.querySelector('.SignUp-Modal').style.display="none";}},'\xD7'),_react2.default.createElement('div',{className:'SignUp-Container'},_react2.default.createElement('h1',null,'Sign-Up, it only takes one minute'),_react2.default.createElement('h5',null,'but the record is 10 seconds...'),_react2.default.createElement('form',{onSubmit:handleSubmit},_react2.default.createElement('input',{type:'text',name:'f_name',placeholder:'First Name'}),_react2.default.createElement('input',{type:'text',name:'l_name',placeholder:'Last Name'}),_react2.default.createElement('input',{type:'text',name:'username',placeholder:'Username'}),_react2.default.createElement('input',{type:'text',name:'email',placeholder:'Email Address'}),_react2.default.createElement('input',{type:'password',name:'password',placeholder:'Password'}),_react2.default.createElement('input',{type:'password',name:'confirm',placeholder:'Confirm Password'}),_react2.default.createElement('input',{type:'text',name:'phonenumber',placeholder:'Phone Number'}),_react2.default.createElement('button',{type:'submit'},'Sign Up')))),_react2.default.createElement('div',{className:'LogIn-Modal'},_react2.default.createElement('span',{className:'close',onClick:function onClick(){document.querySelector('.LogIn-Modal').style.display="none";}},'\xD7'),_react2.default.createElement('div',{className:'LogIn-Container'},_react2.default.createElement('h1',null,'Log In Please'),_react2.default.createElement('input',{type:'text',name:'username',placeholder:'Username'}),_react2.default.createElement('input',{type:'text',name:'password',placeholder:'Password'}),_react2.default.createElement('button',{type:'submit'},'Log In')))));}
 
 /***/ },
-/* 237 */
+/* 236 */
 /*!**************************************!*\
   !*** ./src/components/Head/Head.css ***!
   \**************************************/
@@ -27044,52 +27020,34 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 238 */
+/* 237 */
 /*!**************************************!*\
   !*** ./src/components/Body/Body.jsx ***!
   \**************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _Body=__webpack_require__(/*! ./Body.css */ 239);var _Body2=_interopRequireDefault(_Body);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Body=function(_Component){_inherits(Body,_Component);function Body(){_classCallCheck(this,Body);return _possibleConstructorReturn(this,(Body.__proto__||Object.getPrototypeOf(Body)).apply(this,arguments));}_createClass(Body,[{key:'render',value:function render(){return _react2.default.createElement('div',{className:'Body-container'},_react2.default.createElement('div',{className:'Card-container'},_react2.default.createElement('div',{className:'card-square',id:'headphones'},_react2.default.createElement('p',null,'Headphones')),_react2.default.createElement('div',{className:'card-square',id:'cameras'},_react2.default.createElement('p',null,'Cameras')),_react2.default.createElement('div',{className:'card-square',id:'clothes'},_react2.default.createElement('p',null,'Clothes')),_react2.default.createElement('div',{className:'card-square',id:'televisions'},_react2.default.createElement('p',null,'Televisions')),_react2.default.createElement('div',{className:'card-square',id:'computers'},_react2.default.createElement('p',null,'Computers')),_react2.default.createElement('div',{className:'card-square',id:'phones'},_react2.default.createElement('p',null,'Phones')),_react2.default.createElement('div',{className:'card-square',id:'furniture'},_react2.default.createElement('p',null,'Furniture')),_react2.default.createElement('div',{className:'card-square',id:'games'},_react2.default.createElement('p',null,'Games')),_react2.default.createElement('div',{className:'card-square',id:'jewerly'},_react2.default.createElement('p',null,'Jewerly')),_react2.default.createElement('div',{className:'card-square',id:'toys'},_react2.default.createElement('p',null,'Toys')),_react2.default.createElement('div',{className:'card-square',id:'autoparts'},_react2.default.createElement('p',null,'Auto Parts')),_react2.default.createElement('div',{className:'card-square',id:'applicances'},_react2.default.createElement('p',null,'Applicances'))));}}]);return Body;}(_react.Component);exports.default=Body;
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _Main=__webpack_require__(/*! ../Main/Main.jsx */ 238);var _Main2=_interopRequireDefault(_Main);var _Body=__webpack_require__(/*! ./Body.css */ 248);var _Body2=_interopRequireDefault(_Body);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Body=function(_Component){_inherits(Body,_Component);function Body(){_classCallCheck(this,Body);return _possibleConstructorReturn(this,(Body.__proto__||Object.getPrototypeOf(Body)).apply(this,arguments));}_createClass(Body,[{key:'render',value:function render(){return _react2.default.createElement('div',{className:'Body-container'},_react2.default.createElement('div',{className:'Card-container'},_react2.default.createElement(_reactRouter.Link,{to:'/main'},_react2.default.createElement('div',{className:'card-square',id:'headphones'},_react2.default.createElement('p',null,'Headphones'))),_react2.default.createElement(_reactRouter.Link,{to:'/main'},_react2.default.createElement('div',{className:'card-square',id:'cameras'},_react2.default.createElement('p',null,'Cameras'))),_react2.default.createElement('div',{className:'card-square',id:'clothes'},_react2.default.createElement('p',null,'Clothes')),_react2.default.createElement('div',{className:'card-square',id:'televisions'},_react2.default.createElement('p',null,'Televisions')),_react2.default.createElement('div',{className:'card-square',id:'computers'},_react2.default.createElement('p',null,'Computers')),_react2.default.createElement('div',{className:'card-square',id:'phones'},_react2.default.createElement('p',null,'Phones')),_react2.default.createElement('div',{className:'card-square',id:'furniture'},_react2.default.createElement('p',null,'Furniture')),_react2.default.createElement('div',{className:'card-square',id:'games'},_react2.default.createElement('p',null,'Games')),_react2.default.createElement('div',{className:'card-square',id:'jewerly'},_react2.default.createElement('p',null,'Jewerly')),_react2.default.createElement('div',{className:'card-square',id:'toys'},_react2.default.createElement('p',null,'Toys')),_react2.default.createElement('div',{className:'card-square',id:'autoparts'},_react2.default.createElement('p',null,'Auto Parts')),_react2.default.createElement('div',{className:'card-square',id:'applicances'},_react2.default.createElement('p',null,'Applicances'))));}}]);return Body;}(_react.Component);exports.default=Body;
 
 /***/ },
-/* 239 */
-/*!**************************************!*\
-  !*** ./src/components/Body/Body.css ***!
-  \**************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 240 */
-/*!**************************************!*\
-  !*** ./src/components/Home/Home.css ***!
-  \**************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 241 */
+/* 238 */
 /*!**************************************!*\
   !*** ./src/components/Main/Main.jsx ***!
   \**************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _Search=__webpack_require__(/*! ../Search/Search.jsx */ 242);var _Search2=_interopRequireDefault(_Search);var _Filter=__webpack_require__(/*! ../Filter/Filter.jsx */ 244);var _Filter2=_interopRequireDefault(_Filter);var _Product=__webpack_require__(/*! ../Product/Product.jsx */ 246);var _Product2=_interopRequireDefault(_Product);var _Main=__webpack_require__(/*! ./Main.css */ 250);var _Main2=_interopRequireDefault(_Main);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Main=function(_Component){_inherits(Main,_Component);function Main(){_classCallCheck(this,Main);return _possibleConstructorReturn(this,(Main.__proto__||Object.getPrototypeOf(Main)).apply(this,arguments));}_createClass(Main,[{key:'render',value:function render(){var _this2=this;return _react2.default.createElement('div',{className:'Main-Container'},_react2.default.createElement('div',{className:'Main-Search'},_react2.default.createElement(_Search2.default,{searchTerm:this.props.state.searchTerm,handleUpdateSearch:function handleUpdateSearch(event){return _this2.props.state.handleUpdateSearch(event);},handleSubmitSearch:function handleSubmitSearch(){return _this2.props.state.handleSubmitSearch();}})),_react2.default.createElement('div',{className:'Main-Style'},_react2.default.createElement('div',{className:'Main-Filter'},_react2.default.createElement(_Filter2.default,null)),_react2.default.createElement('div',{className:'Main-Product'})));}}]);return Main;}(_react.Component);exports.default=Main;
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _Search=__webpack_require__(/*! ../Search/Search.jsx */ 239);var _Search2=_interopRequireDefault(_Search);var _Filter=__webpack_require__(/*! ../Filter/Filter.jsx */ 241);var _Filter2=_interopRequireDefault(_Filter);var _Product=__webpack_require__(/*! ../Product/Product.jsx */ 243);var _Product2=_interopRequireDefault(_Product);var _Main=__webpack_require__(/*! ./Main.css */ 247);var _Main2=_interopRequireDefault(_Main);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Main=function(_Component){_inherits(Main,_Component);function Main(){_classCallCheck(this,Main);return _possibleConstructorReturn(this,(Main.__proto__||Object.getPrototypeOf(Main)).apply(this,arguments));}_createClass(Main,[{key:'render',value:function render(){return _react2.default.createElement('div',{className:'Main-Container'},_react2.default.createElement('div',{className:'Main-Search'}),_react2.default.createElement('div',{className:'Main-Style'},_react2.default.createElement('div',{className:'Main-Filter'},_react2.default.createElement(_Filter2.default,null)),_react2.default.createElement('div',{className:'Main-Product'},_react2.default.createElement(_Product2.default,{products:this.props.state.test}))));}}]);return Main;}(_react.Component);exports.default=Main;
 
 /***/ },
-/* 242 */
+/* 239 */
 /*!******************************************!*\
   !*** ./src/components/Search/Search.jsx ***!
   \******************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _Search=__webpack_require__(/*! ./Search.css */ 243);var _Search2=_interopRequireDefault(_Search);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Search=function(_Component){_inherits(Search,_Component);function Search(){_classCallCheck(this,Search);return _possibleConstructorReturn(this,(Search.__proto__||Object.getPrototypeOf(Search)).apply(this,arguments));}_createClass(Search,[{key:'render',value:function render(){return _react2.default.createElement('div',{className:'Search-Container'},_react2.default.createElement('form',{action:''},_react2.default.createElement('input',{type:'text',name:'product',placeholder:'Find what you want...'}),_react2.default.createElement('button',{type:'submit'},'Search')));}}]);return Search;}(_react.Component);exports.default=Search;
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _Search=__webpack_require__(/*! ./Search.css */ 240);var _Search2=_interopRequireDefault(_Search);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Search=function(_Component){_inherits(Search,_Component);function Search(){_classCallCheck(this,Search);return _possibleConstructorReturn(this,(Search.__proto__||Object.getPrototypeOf(Search)).apply(this,arguments));}_createClass(Search,[{key:'render',value:function render(){var _this2=this;return _react2.default.createElement('div',{className:'Search-Container'},_react2.default.createElement('form',{onSubmit:this.props.handleSubmitSearch},_react2.default.createElement('input',{type:'text',name:'product',value:this.props.searchTerm,placeholder:'Find what you want...',onChange:function onChange(event){return _this2.props.handleUpdateSearch(event);}}),_react2.default.createElement('button',{type:'submit'},'Search')));}}]);return Search;}(_react.Component);exports.default=Search;
 
 /***/ },
-/* 243 */
+/* 240 */
 /*!******************************************!*\
   !*** ./src/components/Search/Search.css ***!
   \******************************************/
@@ -27098,16 +27056,16 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 244 */
+/* 241 */
 /*!******************************************!*\
   !*** ./src/components/Filter/Filter.jsx ***!
   \******************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _Filter=__webpack_require__(/*! ./Filter.css */ 245);var _Filter2=_interopRequireDefault(_Filter);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Filter=function(_Component){_inherits(Filter,_Component);function Filter(){_classCallCheck(this,Filter);return _possibleConstructorReturn(this,(Filter.__proto__||Object.getPrototypeOf(Filter)).apply(this,arguments));}_createClass(Filter,[{key:'render',value:function render(){return _react2.default.createElement('div',{className:'Filter-Container'},_react2.default.createElement('div',{className:'range-slider','data-slider':true,'data-options':'start: 1; end: 10;'},_react2.default.createElement('span',{className:'range-slider-handle',role:'slider',tabIndex:'0'}),_react2.default.createElement('span',{className:'range-slider-active-segment'}),_react2.default.createElement('input',{type:'range'})),_react2.default.createElement('div',{className:'range-slider','data-slider':true,'data-options':'start: 1; end: 10;'},_react2.default.createElement('span',{className:'range-slider-handle',role:'slider',tabIndex:'0'}),_react2.default.createElement('span',{className:'range-slider-active-segment'}),_react2.default.createElement('input',{type:'range'})),_react2.default.createElement('select',null,_react2.default.createElement('option',{value:'test'},'Test'),_react2.default.createElement('option',{value:'test'},'Test 2'),_react2.default.createElement('option',{value:'test'},'Test 3'),_react2.default.createElement('option',{value:'test'},'Test 4')),_react2.default.createElement('select',null,_react2.default.createElement('option',{value:'next'},'Next Test'),_react2.default.createElement('option',{value:'next'},'Next Test 2'),_react2.default.createElement('option',{value:'next'},'Next Test 3'),_react2.default.createElement('option',{value:'next'},'Next Test 4')),_react2.default.createElement('select',null,_react2.default.createElement('option',{value:'last'},'Last Test'),_react2.default.createElement('option',{value:'last'},'Last Test 2'),_react2.default.createElement('option',{value:'last'},'Last Test 3'),_react2.default.createElement('option',{value:'last'},'Last Test 4')));}}]);return Filter;}(_react.Component);exports.default=Filter;
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _Filter=__webpack_require__(/*! ./Filter.css */ 242);var _Filter2=_interopRequireDefault(_Filter);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Filter=function(_Component){_inherits(Filter,_Component);function Filter(){_classCallCheck(this,Filter);return _possibleConstructorReturn(this,(Filter.__proto__||Object.getPrototypeOf(Filter)).apply(this,arguments));}_createClass(Filter,[{key:'render',value:function render(){return _react2.default.createElement('div',{className:'Filter-Container'},_react2.default.createElement('select',null,_react2.default.createElement('option',{value:'next'}),_react2.default.createElement('option',{value:'next'},'A to Z'),_react2.default.createElement('option',{value:'next'},'Z to A')),_react2.default.createElement('select',null,_react2.default.createElement('option',{value:'last'}),_react2.default.createElement('option',{value:'last'},'Lowest Price'),_react2.default.createElement('option',{value:'last'},'Highest Price')),_react2.default.createElement('select',null,_react2.default.createElement('option',{value:'category'},'Headphones'),_react2.default.createElement('option',{value:'category'},'Cameras'),_react2.default.createElement('option',{value:'category'},'Clothes'),_react2.default.createElement('option',{value:'category'},'Televisions'),_react2.default.createElement('option',{value:'category'},'Computers'),_react2.default.createElement('option',{value:'category'},'Phones'),_react2.default.createElement('option',{value:'category'},'Furniture'),_react2.default.createElement('option',{value:'category'},'Games'),_react2.default.createElement('option',{value:'category'},'Jewerly'),_react2.default.createElement('option',{value:'category'},'Toys'),_react2.default.createElement('option',{value:'category'},'Auto Parts'),_react2.default.createElement('option',{value:'category'},'Applicances')));}}]);return Filter;}(_react.Component);exports.default=Filter;
 
 /***/ },
-/* 245 */
+/* 242 */
 /*!******************************************!*\
   !*** ./src/components/Filter/Filter.css ***!
   \******************************************/
@@ -27116,13 +27074,13 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 246 */
+/* 243 */
 /*!********************************************!*\
   !*** ./src/components/Product/Product.jsx ***!
   \********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _Product=__webpack_require__(/*! ./Product.css */ 247);var _Product2=_interopRequireDefault(_Product);var _ProductItems=__webpack_require__(/*! ../ProductItems/ProductItems.jsx */ 248);var _ProductItems2=_interopRequireDefault(_ProductItems);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// export default class Product extends Component {
+	'use strict';var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _Product=__webpack_require__(/*! ./Product.css */ 244);var _Product2=_interopRequireDefault(_Product);var _ProductItems=__webpack_require__(/*! ../ProductItems/ProductItems.jsx */ 245);var _ProductItems2=_interopRequireDefault(_ProductItems);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// export default class Product extends Component {
 	//   render(){
 	//     return(
 	//       <div className="Product-Container">
@@ -27132,10 +27090,10 @@
 	//     )
 	//   }
 	// }
-	var Product=function Product(props){var products=props.products.map(function(product,i){return _react2.default.createElement(_ProductItems2.default,{key:i,title:product.title,img:product.galleryURL,url:product.viewItemURL,price:product.sellingStatus[0].currentPrice[0].__value__});});_react2.default.createElement('div',{className:'Product-Container'},products);};
+	var Product=function Product(props){var products=props.products.map(function(product,i){return _react2.default.createElement(_ProductItems2.default,{key:i,title:product.title,price:product.price,iml:product.img,url:product.url});});_react2.default.createElement('div',{className:'Product-Container'},products);};
 
 /***/ },
-/* 247 */
+/* 244 */
 /*!********************************************!*\
   !*** ./src/components/Product/Product.css ***!
   \********************************************/
@@ -27144,13 +27102,13 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 248 */
+/* 245 */
 /*!******************************************************!*\
   !*** ./src/components/ProductItems/ProductItems.jsx ***!
   \******************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _ProductItems=__webpack_require__(/*! ./ProductItems.css */ 249);var _ProductItems2=_interopRequireDefault(_ProductItems);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// export default class ProductItems extends Component {
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _ProductItems=__webpack_require__(/*! ./ProductItems.css */ 246);var _ProductItems2=_interopRequireDefault(_ProductItems);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// export default class ProductItems extends Component {
 	//   render(){
 	//     return(
 	//       <div className="ProductItems-Container">
@@ -27175,7 +27133,7 @@
 	var ProductItems=function ProductItems(props){return _react2.default.createElement('div',{className:'ProductItems-Container'},_react2.default.createElement('h3',null,props.title),_react2.default.createElement('h4',null,props.price),_react2.default.createElement('img',{src:props.img,alt:props.title}),_react2.default.createElement('a',{href:props.url},'See it here'));};exports.default=ProductItems;
 
 /***/ },
-/* 249 */
+/* 246 */
 /*!******************************************************!*\
   !*** ./src/components/ProductItems/ProductItems.css ***!
   \******************************************************/
@@ -27184,13 +27142,73 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 250 */
+/* 247 */
 /*!**************************************!*\
   !*** ./src/components/Main/Main.css ***!
   \**************************************/
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 248 */
+/*!**************************************!*\
+  !*** ./src/components/Body/Body.css ***!
+  \**************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 249 */
+/*!**************************************!*\
+  !*** ./src/components/Home/Home.css ***!
+  \**************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 250 */
+/*!********************************************!*\
+  !*** ./src/components/Ajax/AjaxAdapter.js ***!
+  \********************************************/
+/***/ function(module, exports) {
+
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function indexByKeyName(arr,keyName){console.log('key');return arr.reduce(function(obj,el){obj[el[keyName]]=el;return obj;console.log(obj);},{});}var AjaxAdapter=function(){function AjaxAdapter(){_classCallCheck(this,AjaxAdapter);}_createClass(AjaxAdapter,null,[{key:'signUpUser',value:function signUpUser(newUser){return fetch('/api/products',{method:'POST',headers:{'Content-type':'application/json; charset=UTF-8'},body:JSON.stringify(newUser)}).then(r=r.json());}},{key:'getAllProducts',value:function getAllProducts(){console.log('here');return fetch('/api/db/products/').then(function(r){return r.json();}).then(function(data){return indexByKeyName(data,'id');});}// static getSelectedProdcuts(category) {
+	//   return fetch(`/api/db/products/${category}`)
+	//   .then(r => r.json())
+	//   .then(data => {
+	//   database = data;
+	//   next();
+	// })
+	//   .catch(err => next(err));
+	// }
+	}]);return AjaxAdapter;}();// static getTask() {
+	//   return fetch('/tasks')
+	//   .then(r => r.json())
+	//   .then(data => indexByKeyName(data, 'id'));
+	// }
+	// static createTask(newTask) {
+	//   return fetch('/tasks', {
+	//     method:  'POST',
+	//     headers: {
+	//       'Content-type': 'application/json; charset=UTF-8',
+	//     },
+	//     body: JSON.stringify(newTask),
+	//   })
+	//     .then(r => r.json());
+	// }
+	// static delete(id) {
+	//   return fetch(`/tasks/${id}`, {
+	//     method:  'DELETE',
+	//     headers: {
+	//       'Content-type': 'application/json; charset=UTF-8',
+	//     },
+	//   })
+	//     .then(r => r.json());
+	// }
+	exports.default=AjaxAdapter;
 
 /***/ },
 /* 251 */

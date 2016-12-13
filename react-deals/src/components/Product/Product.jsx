@@ -19,9 +19,9 @@ const Product = props => {
       <ProductItems
         key={i}
         title={product.title}
-        img={product.galleryURL}
-        url={product.viewItemURL}
-        price={product.sellingStatus[0].currentPrice[0].__value__}
+        price={product.price}
+        iml={product.img}
+        url={product.url}
       />
     );
   });

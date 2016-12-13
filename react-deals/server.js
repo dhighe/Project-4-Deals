@@ -11,8 +11,7 @@ app.set(logger('dev'));
 app.use(express.static(path.join(__dirname, 'dist')));
 app.use(bodyParser.json())
 app.use('/api/products', require('./routes/products.js'))
-// dist refers the the dist folder we created
-
+app.use('/api/db/products', require('./routes/dbproducts.js'))
 
 app.listen(PORT, () => console.log('Welcome to port: ', PORT));
 

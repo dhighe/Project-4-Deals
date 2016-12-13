@@ -60,6 +60,7 @@
     "url-loader": "^0.5.7",
     "watch": "^1.0.1",
     "webpack": "^1.13.3",
-    "webpack-dev-server": "^1.16.2"
+    "webpack-dev-server": "^1.16.2",
+    "webpack-dotenv-plugin": "^1.4.0"
   }
 }

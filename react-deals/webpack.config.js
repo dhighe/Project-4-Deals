@@ -5,6 +5,7 @@ const path              = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const htmlTemplate      = require('html-webpack-template');
+const DotenvPlugin      = require('webpack-dotenv-plugin');
 
 const BUILD_DIR         = path.resolve(__dirname, 'dist');
 const APP_DIR           = path.resolve(__dirname, 'src');
@@ -26,6 +27,9 @@ const config = {
     extensions: ['', '.js', '.jsx'],
   },
   plugins: [
+    new DotenvPlugin({
+        path: './.env'
+     }),
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development'),
@@ -40,7 +44,7 @@ const config = {
     }),
     new ExtractTextPlugin('/css/[name].css', {
       allChunks: true,
-    }),
+    })
   ],
 
   module: {

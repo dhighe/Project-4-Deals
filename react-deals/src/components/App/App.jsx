@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router'
-import AjaxAdapter from '../Ajax/AjaxAdapter';
+import AjaxAdapter from '../Ajax/AjaxAdapter.js';
 import Home from '../Home/Home.jsx'
 import Main from '../Main/Main.jsx'
 import style from './App.css'
@@ -12,9 +12,10 @@ constructor(props) {
 
   this.state = {
     searchTerm: '',
-    products: [],
+    products: '',
     currentPage: 1,
-    totalResults: 0
+    totalResults: 0,
+    test: "andrew"
   };
   this.signUpUser = this.signUpUser.bind(this);
 }
@@ -26,24 +27,43 @@ handleUpdateSearch(event) {
   });
 }
 
+// handleSubmitSearch() {
+//   fetch(`/api/products`)
+//   .then(r => r.json())
+//   .then((data) => {
+//     this.setState({
+//       products: data.findItemsByKeywordsResponse[0].searchResult.count,
+//       totalResults: data.findItemsByKeywordsResponse[0].searchResult.item,
+//     });
+//   })
+//   .catch(err => console.log('Error: ',err));
+// }
 
-// Handle the call to the OMDB api
-handleSubmitSearch(page=1) {
-  fetch(`/api/products`)
-  .then(r => r.json())
-  .then((data) => {
-    this.setState({
-      products: data.findItemsByKeywordsResponse[0].searchResult.count,
-      totalResults: data.findItemsByKeywordsResponse[0].searchResult.item,
-      currentPage: page
-    });
-  })
-  .catch(err => console.log('Error: ',err));
-}
+handleSubmitSearch() {
+   const API_KEY = process.env.API_KEY;
+
+   const authorization = () => 'Basic ' + (window.btoa(`${API_KEY}`));
+
+   const authParameters = {
+     headers: {
+       Authorization: authorization()
+     }
+   };
+
+   const EBAY_URL = `https://svcs.ebay.com/services/search/FindingService/v1?SECURITY-APPNAME=${API_KEY}&OPERATION-NAME=findItemsByKeywords&callback=_cb_findItemsByKeywords&keywords=${this.state.search}&paginationInput.entriesPerPage=15&GLOBAL-ID=EBAY-US&siteid=0`;
+
+   fetch(EBAY_URL, authParameters)
+   .then(r => r.json())
+   .then(result => {
+     this.setState({
+        products: result.findItemsByKeywordsResponse[0].searchResult.count,
+        totalResults: result.findItemsByKeywordsResponse[0].searchResult.item,
+     });
+   });
+ }
 
 // Edit display information on page with new search items from fetch call
 displayNext() {
-// If the search results are more then 10 (as only 10 objects are rendered at a time) allow for more results to be retrieve
   if (this.state.totalResults > this.state.currentPage * 15) {
       return (
 // Create button if the above condition is true
@@ -85,6 +105,28 @@ signUpUser(f_name, l_name, username, email, password, phonenumber) {
       throw error;
     });
 }
+
+componentDidMount() {
+  AjaxAdapter.getAllProducts()
+  .then(data =>
+    this.setState({ products: data })
+  )
+  .catch((error) => {
+    throw error
+  });
+}
+
+getSelectedProdcuts() {
+    AjaxAdapter.getSelectedProdcuts()
+    .then(data =>
+      this.setState({
+        products: data
+      })
+    )
+    .catch((error) => {
+      throw error;
+    });
+  }
 
   render(){
     return(
