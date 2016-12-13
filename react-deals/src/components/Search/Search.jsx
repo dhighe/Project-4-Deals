@@ -7,7 +7,7 @@ export default class Search extends Component {
       <div className="Search-Container">
         <form action="">
           <input type="text" name="product" placeholder="Find what you want..." />
-          <input type="submit" value="Submit" />
+          <button type="submit">Search</button>
         </form>
       </div>
     )

@@ -29,11 +29,11 @@ handleUpdateSearch(event) {
 
 // Handle the call to the OMDB api
 handleSubmitSearch(page=1) {
-  fetch(`http://www.omdbapi.com/?s=${this.state.searchTerm}&page=${page}`)
+  fetch(`/api/products`)
   .then(r => r.json())
   .then((data) => {
     this.setState({
-      movies: data.findItemsByKeywordsResponse[0].searchResult.count,
+      products: data.findItemsByKeywordsResponse[0].searchResult.count,
       totalResults: data.findItemsByKeywordsResponse[0].searchResult.item,
       currentPage: page
     });
@@ -89,6 +89,7 @@ signUpUser(f_name, l_name, username, email, password, phonenumber) {
   render(){
     return(
       <div className="App-Container">
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet" />
         {this.props.children && React.cloneElement(this.props.children, {state:this.state})}
       </div>
     )

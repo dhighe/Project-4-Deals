@@ -14,7 +14,9 @@ export default class Home extends Component {
           <button><Link to="/main">Main</Link></button>
         <h1>Welcome to My App...</h1>
         <div className="Home-Header">
-          <Head signUpUser={this.props.signUpUser}/>
+          <Head
+            signUpUser={this.props.signUpUser}
+          />
         </div>
         <div className="Home-Body">
           <Body />

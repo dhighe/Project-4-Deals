@@ -13,8 +13,6 @@ export default class AjaxAdapter {
 
 }
 
-
-
   // static getTask() {
   //   return fetch('/tasks')
   //   .then(r => r.json())

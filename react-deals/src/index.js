@@ -9,7 +9,7 @@ ReactDOM.render((
   <Router history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
-      <Route path="/main" component={Main} />
+      <Route path="main" component={Main} />
     </Route>
   </Router>
 ), document.querySelector('#container'))
