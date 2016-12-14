@@ -26,17 +26,13 @@
   },
   "homepage": "https://github.com/dhighe/Project-4-Deals#readme",
   "dependencies": {
-    "axios": "^0.15.3",
     "body-parser": "^1.15.2",
-    "crypto": "0.0.3",
     "express": "^4.14.0",
     "express-session": "^1.14.2",
-    "fetch-jsonp": "^1.0.3",
     "method-override": "^2.3.7",
     "morgan": "^1.7.0",
     "path": "^0.12.7",
     "pg-promise": "^5.4.7",
-    "reflux": "^5.0.4",
     "twilio": "^2.11.1"
   },
   "devDependencies": {
