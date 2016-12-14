@@ -29,7 +29,7 @@ const ProductItems = props => (
     <h3>{props.title}</h3>
     <h4>{props.price}</h4>
     <img src={props.img} alt={props.title} />
-    <a href={props.url}>See it here</a>
+    <a href={props.url}>Get it here</a>
   </div>
 );
 

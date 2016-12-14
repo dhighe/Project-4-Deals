@@ -11,8 +11,11 @@ export default class Home extends Component {
   render(){
     return(
       <div className="Home-Container">
-        <h1>Welcome to My App...</h1>
         <div className="Home-Header">
+          <div className="Welcome-Home">
+            <h1>Create your Dreamlist</h1>
+            <h3>We'll do the rest</h3>
+          </div>
           <Head
             signUpUser={this.props.signUpUser}
           />
@@ -21,6 +24,8 @@ export default class Home extends Component {
           <Body
             productCategory={this.props.productCategory}
             getSelectedProdcuts={this.props.getSelectedProdcuts}
+            getCameras={this.props.getCameras}
+            getHeadphones={this.props.getHeadphones}
           />
         </div>
       </div>

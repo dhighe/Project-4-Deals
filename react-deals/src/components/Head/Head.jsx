@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router'
 import style from './Head.css';
 
 
@@ -26,25 +27,40 @@ export default function Head(props){
           <div className="SignUp-Modal">
             <span className="close" onClick={()=>{document.querySelector('.SignUp-Modal').style.display = "none"}}>×</span>
             <div className="SignUp-Container">
-              <h1>Sign-Up</h1>
-              <form onSubmit={handleSubmit}>
+              <h2>SignUp</h2>
+              <form
+                action='/api/twilio'
+                onSubmit={handleSubmit}
+                className="Sign-Up-Form"
+                >
+                First Name
                 <input type="text" name="f_name" placeholder="First Name" />
+                Last Name
                 <input type="text" name="l_name" placeholder="Last Name" />
+                Username
                 <input type="text" name="username" placeholder="Username" />
+                Email Address
                 <input type="text" name="email" placeholder="Email Address" />
+                Password
                 <input type="password" name="password" placeholder="Password" />
+                Phonenumber
                 <input type="text" name="phonenumber" placeholder="Phone Number" />
-                <button type="submit">Sign Up</button>
+                <button type="submit">Create Account</button>
               </form>
             </div>
           </div>
           <div className="LogIn-Modal">
           <span className="close" onClick={()=>{document.querySelector('.LogIn-Modal').style.display = "none"}}>×</span>
             <div className="LogIn-Container">
-              <h1>Log In Please</h1>
-              <input type="text" name="username" placeholder="Username" />
-              <input type="text" name="password" placeholder="Password" />
-              <button type="submit">Log In</button>
+              <h2>Log In</h2>
+              <form
+                className="Log-In-Form">
+                Username
+                <input type="text" name="username" placeholder="Username" />
+                Password
+                <input type="text" name="password" placeholder="Password" />
+                <button type="submit">Log In</button>
+              </form>
             </div>
           </div>
         </div>

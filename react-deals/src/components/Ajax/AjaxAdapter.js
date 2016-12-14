@@ -1,16 +1,8 @@
-function indexByKeyName(arr, keyName) {
-  console.log('key')
-  return arr.reduce((obj, el) => {
-    obj[el[keyName]] = el;
-    return obj;
-    console.log(obj);
-  }, {});
-}
 
 export default class AjaxAdapter {
 
   static signUpUser(newUser) {
-    return fetch('/api/products', {
+    return fetch('/api/users', {
       method: 'POST',
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
@@ -28,6 +20,16 @@ export default class AjaxAdapter {
 
   static getSelectedProdcuts(category) {
     return fetch(`/api/db/products/${category}`)
+    .then(r => r.json())
+  }
+
+  static getHeadphones() {
+    return fetch(`/api/db/products/headphones`)
+    .then(r => r.json())
+  }
+
+  static getCameras(category) {
+    return fetch(`/api/db/products/camera`)
     .then(r => r.json())
   }
 }

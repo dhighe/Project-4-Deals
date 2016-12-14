@@ -1,10 +1,14 @@
 .Head-container {
-  background-image: url('http://blog.aditmicrosys.com/wp-content/uploads/2016/01/tech_wishlist-2.png') no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
 }
 
 .button-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
 }
@@ -33,22 +37,64 @@
 
 .SignUp-Container {
   position: absolute;
-  left: 10vw;
+  left: 30vw;
   top: 15vh;
   background-color: #FAFAFA;
-  width: 80vw;
-  height: 40vw;
+  width: 40vw;
+  height: 30vw;
   border: 1px solid #9C9C9C;
-  border-radius: 1.5vw;
+  border-radius: 1vw;
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  flex-direction: column;
+}
+
+.Sign-Up-Form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .LogIn-Container {
   position: absolute;
-  left: 10vw;
+  left: 30vw;
   top: 15vh;
   background-color: #FAFAFA;
-  width: 80vw;
-  height: 40vw;
+  width: 40vw;
+  height: 30vw;
   border: 1px solid #9C9C9C;
-  border-radius: 1.5vw;
+  border-radius: 1vw;
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  flex-direction: column;
 }
+
+.Log-In-Form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button{
+  font-family: 'Raleway', sansserif;
+  background: rgb(19,157,215);
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  width: 300px;
+  height: 45%;
+  color: white;
+  font-size: 20px;
+  margin-right: 10px;
+  box-shadow: 5px 5px 5px darkgray;
+}
+
+button:hover {
+  box-shadow: 2px 2px 2px lightgray;
+}
+
+

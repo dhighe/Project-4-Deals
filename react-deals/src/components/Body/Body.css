@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .Card-container {
@@ -16,8 +17,8 @@ height: 100%;
 }
 
 .card-square {
-  height: 20vh;
-  width: 15vw;
+  height: 22vh;
+  width: 18vw;
   margin: 8px;
   display: flex;
   background-color: darkgray;
@@ -105,5 +106,10 @@ height: 100%;
   background: url('http://media.npr.org/assets/img/2011/10/20/ap1110110135894_custom-de0627c4cbf1d2b4b1a82092520bf7ab99b8ad8a-s900-c85.jpg') no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.phil-winningchester {
+  text-decoration: none;
+  color: white;
 }
 

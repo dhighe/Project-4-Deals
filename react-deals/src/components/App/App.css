@@ -1,7 +1,20 @@
 body {
   width: 100vw;
   height: 100vh;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  background-color: rgb(235,235,235);
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 45px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .App-Container {

@@ -24,7 +24,8 @@ app.get('/api/twilio', (req, res) => {
     if(err) {
       console.log(err);
     }
-  });
+  })
+  res.redirect('back');
 });
 
 app.listen(PORT, () => console.log('Welcome to port: ', PORT));

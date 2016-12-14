@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { RouteHandler } from 'react-router'
+import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router';
+import { RouteHandler } from 'react-router';
 import Search from '../Search/Search.jsx';
 import Filter from '../Filter/Filter.jsx';
 import Product from '../Product/Product.jsx';
@@ -11,15 +12,17 @@ export default class Main extends Component {
 
   render(){
     // const props = {...this.props.state}
-    console.log(this.props.state.products)
     return(
       <div className="Main-Container">
+      <button><Link to="/">Home</Link></button>
         <div className="Main-Search">
-          {/*<Search
+          <Search
+          /*
             searchTerm={this.props.state.searchTerm}
             handleUpdateSearch={(event) => this.props.state.handleUpdateSearch(event)}
             handleSubmitSearch={()=> this.props.state.handleSubmitSearch()}
-          />*/}
+          */
+          />
         </div>
         <div className="Main-Style">
           <div className="Main-Filter">

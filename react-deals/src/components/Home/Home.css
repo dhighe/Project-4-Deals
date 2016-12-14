@@ -1,18 +1,37 @@
 .Home-Container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  height: 135vh;
+  width: 100vw;
 }
 
 .Home-Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url('../../../public/images/banner.png') no-repeat;
+  background-size: cover;
   height: 30%;
+  width: 100vw;
 }
 
 .Home-Body {
-  height: 70%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 80%;
+}
+
+.Welcome-Home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-shadow: 2px 2px 2px #222;
+  text-decoration: none;
 }

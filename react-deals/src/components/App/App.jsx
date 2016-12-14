@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router'
+import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router';
 import AjaxAdapter from '../Ajax/AjaxAdapter.js';
-import Main from '../Main/Main.jsx'
-import style from './App.css'
+import Main from '../Main/Main.jsx';
+import style from './App.css';
+// import './normalize.css';
 
 export default class App extends Component {
 
@@ -11,14 +12,12 @@ constructor(props) {
 
   this.state = {
     searchTerm: '',
-    products: '',
+    products: [],
     currentPage: 1,
     totalResults: 0,
     category: '',
     users: {}
   };
-  this.signUpUser = this.signUpUser.bind(this);
-  this.productCategory = this.productCategory.bind(this);
 }
 
 // Handle what is in the input box that will be rendered on the page => Allow users to type in search term
@@ -104,7 +103,6 @@ displayPrev() {
 signUpUser(f_name, l_name, username, email, password, phonenumber) {
   AjaxAdapter.signUpUser({ f_name, l_name, username, email, password, phonenumber })
     .then((newUser) => {
-      // clone existing state
       newState[newUser.id] = newUser;
       this.setState({ user: newState });
     })
@@ -123,12 +121,30 @@ componentDidMount() {
   });
 }
 
-getSelectedProdcuts() {
-    AjaxAdapter.getSelectedProdcuts()
+getSelectedProdcuts(event) {
+    AjaxAdapter.getSelectedProdcuts(event)
     .then(data =>
-      this.setState({
-        products: data
-      })
+      this.setState({ products: data })
+    )
+    .catch((error) => {
+      throw error;
+    });
+  }
+
+getHeadphones(event) {
+    AjaxAdapter.getHeadphones(event)
+    .then(data =>
+      this.setState({ products: data })
+    )
+    .catch((error) => {
+      throw error;
+    });
+  }
+
+getCameras(event) {
+    AjaxAdapter.getCameras(event)
+    .then(data =>
+      this.setState({ products: data })
     )
     .catch((error) => {
       throw error;
@@ -138,12 +154,15 @@ getSelectedProdcuts() {
   render(){
     return(
       <div className="App-Container">
-      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
         {this.props.children && React.cloneElement(this.props.children, {
           state:this.state,
           signUpUser: this.signUpUser.bind(this),
           productCategory: this.productCategory.bind(this),
-          signUpUser: this.signUpUser.bind(this)
+          signUpUser: this.signUpUser.bind(this),
+          getSelectedProdcuts: this.getSelectedProdcuts.bind(this),
+          getHeadphones: this.getHeadphones.bind(this),
+          getCameras: this.getCameras.bind(this)
         })}
       </div>
     )

@@ -5,26 +5,25 @@ import style from './Body.css';
 
 export default class Body extends Component {
   render() {
-  console.log(this.props.productCategory)
+  console.log(this.props.getSelectedProdcuts)
     return(
       <div className="Body-container">
+        <button className="Main-Button"><Link to="/main" className="phil-winningchester" >Let me Browse</Link></button>
         <div className="Card-container">
-          <Link to="/main">
             <div
-              onClick={headphones => this.props.getSelectedProdcuts(event)}
+              onClick={() => this.props.getHeadphones()}
+              onClick={event => this.props.productCategory(event)}
               className="card-square"
               id="headphones">
               Headphones
             </div>
-          </Link>
-          <Link to="/main">
           <div
-            onClick={camera => this.props.getSelectedProdcuts(camera)}
+            onClick={() => this.props.getCameras()}
+            onClick={event => this.props.productCategory(event)}
             className="card-square"
             id="cameras">
             Cameras
           </div>
-          </Link>
           <div
             onClick={event => this.props.productCategory(event)}
             className="card-square"

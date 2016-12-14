@@ -7,8 +7,8 @@ export default class Filter extends Component {
       <div className="Filter-Container">
         <select>
           <option value="next"></option>
-          <option value="next">A to Z</option>
-          <option value="next">Z to A</option>
+          <option value="next">Sort A to Z</option>
+          <option value="next">Sort Z to A</option>
         </select>
 
         <select>

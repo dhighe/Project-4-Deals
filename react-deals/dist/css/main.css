@@ -30,7 +30,20 @@
 body {
   width: 100vw;
   height: 100vh;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  background-color: rgb(235,235,235);
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 45px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .App-Container {
@@ -52,12 +65,16 @@ body {
   width: 80%;
 }
 .Head-container {
-  background-image: url('http://blog.aditmicrosys.com/wp-content/uploads/2016/01/tech_wishlist-2.png') no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
 }
 
 .button-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
 }
@@ -86,30 +103,73 @@ body {
 
 .SignUp-Container {
   position: absolute;
-  left: 10vw;
+  left: 30vw;
   top: 15vh;
   background-color: #FAFAFA;
-  width: 80vw;
-  height: 40vw;
+  width: 40vw;
+  height: 30vw;
   border: 1px solid #9C9C9C;
-  border-radius: 1.5vw;
+  border-radius: 1vw;
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  flex-direction: column;
+}
+
+.Sign-Up-Form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .LogIn-Container {
   position: absolute;
-  left: 10vw;
+  left: 30vw;
   top: 15vh;
   background-color: #FAFAFA;
-  width: 80vw;
-  height: 40vw;
+  width: 40vw;
+  height: 30vw;
   border: 1px solid #9C9C9C;
-  border-radius: 1.5vw;
+  border-radius: 1vw;
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  flex-direction: column;
 }
+
+.Log-In-Form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button{
+  font-family: 'Raleway', sansserif;
+  background: rgb(19,157,215);
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  width: 300px;
+  height: 45%;
+  color: white;
+  font-size: 20px;
+  margin-right: 10px;
+  box-shadow: 5px 5px 5px darkgray;
+}
+
+button:hover {
+  box-shadow: 2px 2px 2px lightgray;
+}
+
+
 .Body-container {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .Card-container {
@@ -123,8 +183,8 @@ height: 100%;
 }
 
 .card-square {
-  height: 20vh;
-  width: 15vw;
+  height: 22vh;
+  width: 18vw;
   margin: 8px;
   display: flex;
   background-color: darkgray;
@@ -214,23 +274,47 @@ height: 100%;
   background-position: center;
 }
 
+.phil-winningchester {
+  text-decoration: none;
+  color: white;
+}
+
 .Home-Container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 135vh;
+  width: 100vw;
+}
+
+.Home-Header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.Home-Header {
+  background: url(/images/banner.png) no-repeat;
+  background-size: cover;
   height: 30%;
+  width: 100vw;
 }
 
 .Home-Body {
-  height: 70%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 80%;
+}
+
+.Welcome-Home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-shadow: 2px 2px 2px #222;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map*/
