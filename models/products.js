@@ -1,4 +1,4 @@
-const db = require('../db/dbconnect.js');
+const db = require('../lib/dbconnect.js');
 
 function getAllproducts(req, res, next) {
   db.any(`SELECT * FROM products;`)

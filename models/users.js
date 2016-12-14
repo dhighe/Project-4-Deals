@@ -1,4 +1,4 @@
-const db = require('../db/dbconnect.js');
+const db = require('../lib/dbconnect.js');
 
 function getAllUsers(req, res, next) {
   db.any(`SELECT * FROM users;`)
