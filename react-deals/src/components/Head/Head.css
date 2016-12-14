@@ -1,0 +1,100 @@
+.Head-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.SignUp-Modal{
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba( 0, 0, 0, .8);
+}
+
+.LogIn-Modal{
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba( 0, 0, 0, .8);
+}
+
+.SignUp-Container {
+  position: absolute;
+  left: 30vw;
+  top: 15vh;
+  background-color: #FAFAFA;
+  width: 40vw;
+  height: 30vw;
+  border: 1px solid #9C9C9C;
+  border-radius: 1vw;
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  flex-direction: column;
+}
+
+.Sign-Up-Form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.LogIn-Container {
+  position: absolute;
+  left: 30vw;
+  top: 15vh;
+  background-color: #FAFAFA;
+  width: 40vw;
+  height: 30vw;
+  border: 1px solid #9C9C9C;
+  border-radius: 1vw;
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  flex-direction: column;
+}
+
+.Log-In-Form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button{
+  font-family: 'Raleway', sansserif;
+  background: rgb(19,157,215);
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  width: 300px;
+  height: 45%;
+  color: white;
+  font-size: 20px;
+  margin-right: 10px;
+  box-shadow: 5px 5px 5px darkgray;
+}
+
+button:hover {
+  box-shadow: 2px 2px 2px lightgray;
+}
+
+
