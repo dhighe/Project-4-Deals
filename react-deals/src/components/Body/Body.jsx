@@ -11,7 +11,7 @@ export default class Body extends Component {
         <div className="Card-container">
           <Link to="/main">
             <div
-              onClick={event => this.props.productCategory(event)}
+              onClick={headphones => this.props.getSelectedProdcuts(event)}
               className="card-square"
               id="headphones">
               Headphones
@@ -19,7 +19,7 @@ export default class Body extends Component {
           </Link>
           <Link to="/main">
           <div
-            onClick={event => this.props.productCategory(event)}
+            onClick={camera => this.props.getSelectedProdcuts(camera)}
             className="card-square"
             id="cameras">
             Cameras

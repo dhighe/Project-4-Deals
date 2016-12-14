@@ -15,7 +15,7 @@ router.post('/', createUser, (req, res) => {
 });
 
 router.put('/:id', updateUser, (req, res) => {
-  res.status 204
+  res.status(204)
 });
 
 module.exports = router;

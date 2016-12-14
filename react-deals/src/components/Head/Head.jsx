@@ -6,7 +6,7 @@ export default function Head(props){
   const handleSubmit = () => {
     event.preventDefault();
 
-  props.signUpUser(
+  this.props.signUpUser(
     event.target.f_name.value,
     event.target.l_name.value,
     event.target.username.value,
@@ -26,15 +26,13 @@ export default function Head(props){
           <div className="SignUp-Modal">
             <span className="close" onClick={()=>{document.querySelector('.SignUp-Modal').style.display = "none"}}>×</span>
             <div className="SignUp-Container">
-              <h1>Sign-Up, it only takes one minute</h1>
-              <h5>but the record is 10 seconds...</h5>
+              <h1>Sign-Up</h1>
               <form onSubmit={handleSubmit}>
                 <input type="text" name="f_name" placeholder="First Name" />
                 <input type="text" name="l_name" placeholder="Last Name" />
                 <input type="text" name="username" placeholder="Username" />
                 <input type="text" name="email" placeholder="Email Address" />
                 <input type="password" name="password" placeholder="Password" />
-                <input type="password" name="confirm" placeholder="Confirm Password" />
                 <input type="text" name="phonenumber" placeholder="Phone Number" />
                 <button type="submit">Sign Up</button>
               </form>

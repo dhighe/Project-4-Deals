@@ -26,14 +26,9 @@ export default class AjaxAdapter {
     .then(r => r.json())
   };
 
-  // static getSelectedProdcuts(category) {
-  //   return fetch(`/api/db/products/${category}`)
-  //   .then(r => r.json())
-  //   .then(data => {
-  //   database = data;
-  //   next();
-  // })
-  //   .catch(err => next(err));
-  // }
+  static getSelectedProdcuts(category) {
+    return fetch(`/api/db/products/${category}`)
+    .then(r => r.json())
+  }
 }
 

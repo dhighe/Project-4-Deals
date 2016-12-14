@@ -20,6 +20,7 @@ export default class Home extends Component {
         <div className="Home-Body">
           <Body
             productCategory={this.props.productCategory}
+            getSelectedProdcuts={this.props.getSelectedProdcuts}
           />
         </div>
       </div>

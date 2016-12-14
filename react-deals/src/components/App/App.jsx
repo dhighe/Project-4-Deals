@@ -14,7 +14,8 @@ constructor(props) {
     products: '',
     currentPage: 1,
     totalResults: 0,
-    category: ''
+    category: '',
+    users: {}
   };
   this.signUpUser = this.signUpUser.bind(this);
   this.productCategory = this.productCategory.bind(this);
@@ -101,10 +102,9 @@ displayPrev() {
 }
 
 signUpUser(f_name, l_name, username, email, password, phonenumber) {
-  AjaxAdapter.createTask({ f_name, l_name, username, email, password, phonenumber })
+  AjaxAdapter.signUpUser({ f_name, l_name, username, email, password, phonenumber })
     .then((newUser) => {
       // clone existing state
-      const newState = { ...this.state.user };
       newState[newUser.id] = newUser;
       this.setState({ user: newState });
     })
@@ -139,7 +139,12 @@ getSelectedProdcuts() {
     return(
       <div className="App-Container">
       <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet" />
-        {this.props.children && React.cloneElement(this.props.children, {state:this.state})}
+        {this.props.children && React.cloneElement(this.props.children, {
+          state:this.state,
+          signUpUser: this.signUpUser.bind(this),
+          productCategory: this.productCategory.bind(this),
+          signUpUser: this.signUpUser.bind(this)
+        })}
       </div>
     )
   }
