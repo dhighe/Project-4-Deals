@@ -1,3 +1,56 @@
+.Filter-Container {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Main-Container {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Main-Style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.Main-Filter{
+  width: 40%;
+}
+.Main-Product {
+  width: 70%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.App-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.App-Header {
+  height: 30%;
+}
+
+.App-Body {
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
 .Head-container {
   background-image: url('http://blog.aditmicrosys.com/wp-content/uploads/2016/01/tech_wishlist-2.png') no-repeat;
 }
@@ -52,35 +105,6 @@
   border: 1px solid #9C9C9C;
   border-radius: 1.5vw;
 }
-.Filter-Container {
-  display: flex;
-  flex-direction: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.Main-Container {
-  display: flex;
-  flex-direction: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.Main-Style {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  width: 100vw;
-}
-
-.Main-Filter{
-  width: 40%;
-}
-.Main-Product {
-  width: 70%;
-}
-
 .Body-container {
   width: 100%;
   display: flex;
@@ -202,30 +226,6 @@ height: 100%;
 }
 
 .Home-Body {
-  height: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-}
-body {
-  width: 100vw;
-  height: 100vh;
-  font-family: 'Nunito Sans', sans-serif;
-}
-
-.App-Container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.App-Header {
-  height: 30%;
-}
-
-.App-Body {
   height: 70%;
   display: flex;
   justify-content: center;

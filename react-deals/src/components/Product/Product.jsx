@@ -14,19 +14,24 @@ import ProductItems from '../ProductItems/ProductItems.jsx'
 // }
 
 const Product = props => {
+  console.log(props)
   const products = props.products.map((product, i) => {
+    // if (product.category === )
     return (
       <ProductItems
         key={i}
         title={product.title}
         price={product.price}
-        iml={product.img}
+        img={product.img}
         url={product.url}
       />
     );
   });
-  <div className="Product-Container">
-    {products}
-  </div>
+  return(
+    <div className="Product-Container">
+      {products}
+    </div>
+    )
 }
 
+export default Product;

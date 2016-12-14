@@ -11,6 +11,7 @@ export default class Main extends Component {
 
   render(){
     // const props = {...this.props.state}
+    console.log(this.props.state.products)
     return(
       <div className="Main-Container">
         <div className="Main-Search">
@@ -25,9 +26,9 @@ export default class Main extends Component {
             <Filter />
           </div>
           <div className="Main-Product">
-            <Product
-              products={this.props.state.test}
-            />
+          <Product
+            products={this.props.state.products}
+          />
           </div>
         </div>
       </div>

@@ -21,11 +21,10 @@ export default class AjaxAdapter {
   }
 
   static getAllProducts() {
-    console.log('here');
+    // console.log('here');
     return fetch('/api/db/products/')
     .then(r => r.json())
-    .then(data => indexByKeyName(data, 'id'));
-  }
+  };
 
   // static getSelectedProdcuts(category) {
   //   return fetch(`/api/db/products/${category}`)
@@ -38,29 +37,3 @@ export default class AjaxAdapter {
   // }
 }
 
-  // static getTask() {
-  //   return fetch('/tasks')
-  //   .then(r => r.json())
-  //   .then(data => indexByKeyName(data, 'id'));
-  // }
-
-  // static createTask(newTask) {
-  //   return fetch('/tasks', {
-  //     method:  'POST',
-  //     headers: {
-  //       'Content-type': 'application/json; charset=UTF-8',
-  //     },
-  //     body: JSON.stringify(newTask),
-  //   })
-  //     .then(r => r.json());
-  // }
-
-  // static delete(id) {
-  //   return fetch(`/tasks/${id}`, {
-  //     method:  'DELETE',
-  //     headers: {
-  //       'Content-type': 'application/json; charset=UTF-8',
-  //     },
-  //   })
-  //     .then(r => r.json());
-  // }

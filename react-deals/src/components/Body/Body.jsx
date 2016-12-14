@@ -5,48 +5,85 @@ import style from './Body.css';
 
 export default class Body extends Component {
   render() {
+  console.log(this.props.productCategory)
     return(
       <div className="Body-container">
         <div className="Card-container">
           <Link to="/main">
-            <div className="card-square" id="headphones">
-              <p>Headphones</p>
+            <div
+              onClick={event => this.props.productCategory(event)}
+              className="card-square"
+              id="headphones">
+              Headphones
             </div>
           </Link>
           <Link to="/main">
-          <div className="card-square" id="cameras">
-            <p>Cameras</p>
+          <div
+            onClick={event => this.props.productCategory(event)}
+            className="card-square"
+            id="cameras">
+            Cameras
           </div>
           </Link>
-          <div className="card-square" id="clothes">
-            <p>Clothes</p>
+          <div
+            onClick={event => this.props.productCategory(event)}
+            className="card-square"
+            id="clothes">
+            Clothes
           </div>
-          <div className="card-square" id="televisions">
-            <p>Televisions</p>
+          <div
+            onClick={event => this.props.productCategory(event)}
+            className="card-square"
+            id="televisions">
+            Televisions
           </div>
-          <div className="card-square" id="computers">
-            <p>Computers</p>
+          <div
+            onClick={event => this.props.productCategory(event)}
+            className="card-square"
+            id="computers">
+            Computers
           </div>
-          <div className="card-square" id="phones">
-            <p>Phones</p>
+          <div
+            onClick={event => this.props.productCategory(event)}
+            className="card-square"
+            id="phones">
+            Phones
           </div>
-          <div className="card-square" id="furniture">
+          <div
+            onClick={event => this.props.productCategory(event)}
+            className="card-square"
+            id="furniture">
             <p>Furniture</p>
           </div>
-          <div className="card-square" id="games">
-            <p>Games</p>
+          <div
+            onClick={event => this.props.productCategory(event)}
+            className="card-square"
+            id="games">
+            Games
           </div>
-          <div className="card-square" id="jewerly">
-            <p>Jewerly</p>
+          <div
+            onClick={event => this.props.productCategory(event)}
+            className="card-square"
+            id="jewerly">
+            Jewerly
           </div>
-          <div className="card-square" id="toys">
-            <p>Toys</p>
+          <div
+            onClick={event => this.props.productCategory(event)}
+            className="card-square"
+            id="toys">
+            Toys
           </div>
-          <div className="card-square" id="autoparts">
-            <p>Auto Parts</p>
+          <div
+            onClick={event => this.props.productCategory(event)}
+            className="card-square"
+            id="autoparts">
+            Auto Parts
           </div>
-          <div className="card-square" id="applicances">
-            <p>Applicances</p>
+          <div
+            onClick={event => this.props.productCategory(event)}
+            className="card-square"
+            id="applicances">
+            Applicances
           </div>
         </div>
       </div>

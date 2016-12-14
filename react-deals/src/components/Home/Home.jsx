@@ -18,7 +18,9 @@ export default class Home extends Component {
           />
         </div>
         <div className="Home-Body">
-          <Body />
+          <Body
+            productCategory={this.props.productCategory}
+          />
         </div>
       </div>
     )

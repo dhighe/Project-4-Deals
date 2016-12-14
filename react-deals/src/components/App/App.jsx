@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router'
 import AjaxAdapter from '../Ajax/AjaxAdapter.js';
-import Home from '../Home/Home.jsx'
 import Main from '../Main/Main.jsx'
 import style from './App.css'
 
@@ -15,9 +14,10 @@ constructor(props) {
     products: '',
     currentPage: 1,
     totalResults: 0,
-    test: "andrew"
+    category: ''
   };
   this.signUpUser = this.signUpUser.bind(this);
+  this.productCategory = this.productCategory.bind(this);
 }
 
 // Handle what is in the input box that will be rendered on the page => Allow users to type in search term
@@ -38,6 +38,13 @@ handleUpdateSearch(event) {
 //   })
 //   .catch(err => console.log('Error: ',err));
 // }
+
+productCategory(event){
+  console.log(event.target.innerText)
+  // this.setState({
+    // category: event.target.value,
+  // })
+}
 
 handleSubmitSearch() {
    const API_KEY = process.env.API_KEY;
