@@ -48,9 +48,7 @@ productCategory(event){
 
 handleSubmitSearch() {
    const API_KEY = process.env.API_KEY;
-
    const authorization = () => 'Basic ' + (window.btoa(`${API_KEY}`));
-
    const authParameters = {
      headers: {
        Authorization: authorization()

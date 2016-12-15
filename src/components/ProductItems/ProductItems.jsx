@@ -31,6 +31,7 @@ const ProductItems = props => (
       <h4 className="product-price">{props.price}</h4>
       <img className="product-img" src={props.img} alt={props.title} />
       <a href={props.url} className="purchase-link">Get it here</a>
+      <button>Add to Dreamlist</button>
     </div>
   </div>
 );
