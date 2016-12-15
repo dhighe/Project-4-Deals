@@ -3,4 +3,19 @@
   flex-direction: center;
   align-items: center;
   flex-direction: column;
+  width: 100px;
+}
+
+select {
+  border-bottom: 1px solid darkgray;
+  margin: 10px;
+  height: 30px;
+  width: 320px;
+  border: none;
+  outline: none;
+  margin: 10px;
+}
+
+.filter {
+  margin: 0;
 }

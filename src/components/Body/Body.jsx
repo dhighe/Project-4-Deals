@@ -8,7 +8,7 @@ export default class Body extends Component {
   console.log(this.props.getSelectedProdcuts)
     return(
       <div className="Body-container">
-        <button className="Main-Button"><Link to="/main" className="phil-winningchester" >Let me Browse</Link></button>
+        <button className="Main-Button"><Link to="/main" className="phil-winningchester">Search All Products</Link></button>
         <div className="Card-container">
             <div
               onClick={() => this.props.getHeadphones()}

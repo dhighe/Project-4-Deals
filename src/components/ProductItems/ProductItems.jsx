@@ -26,10 +26,12 @@ import style from './ProductItems.css';
 
 const ProductItems = props => (
   <div className="ProductItems-Container">
-    <h3>{props.title}</h3>
-    <h4>{props.price}</h4>
-    <img src={props.img} alt={props.title} />
-    <a href={props.url}>Get it here</a>
+    <div className="Product-Card">
+      <h3 className="product-name">{props.title}</h3>
+      <h4 className="product-price">{props.price}</h4>
+      <img className="product-img" src={props.img} alt={props.title} />
+      <a href={props.url} className="purchase-link">Get it here</a>
+    </div>
   </div>
 );
 

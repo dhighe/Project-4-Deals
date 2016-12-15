@@ -14,7 +14,6 @@ export default class Main extends Component {
     // const props = {...this.props.state}
     return(
       <div className="Main-Container">
-      <button><Link to="/">Home</Link></button>
         <div className="Main-Search">
           <Search
           /*

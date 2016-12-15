@@ -13,7 +13,7 @@ export default class Search extends Component {
             placeholder="Find what you want..."
             onChange={event => this.props.handleUpdateSearch(event)}
             />
-          <button type="submit">Search</button>
+          <button className="Search-Button" type="submit">Search</button>
         </form>
       </div>
     )

@@ -85,7 +85,7 @@ button{
   outline: none;
   border: none;
   border-radius: 2px;
-  width: 300px;
+  width: 200px;
   height: 45%;
   color: white;
   font-size: 20px;
@@ -97,4 +97,19 @@ button:hover {
   box-shadow: 2px 2px 2px lightgray;
 }
 
+.close {
+  color: rgb(19,157,215);
+  float: right;
+  margin-right: 2vw;
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+input {
+  height: 30px;
+  width: 320px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  outline: none;
+}
 

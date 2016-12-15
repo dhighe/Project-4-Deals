@@ -1,0 +1,10 @@
+.Search-Button {
+  box-shadow: none;
+  font-size: 20px;
+  width: 100px;
+  margin: 10px 5px 10px 5px;
+}
+
+.Search-Button:hover {
+  box-shadow: none;
+}
