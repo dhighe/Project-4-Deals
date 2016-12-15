@@ -6,14 +6,14 @@ This idea originally came to me around Black Friday and Cyber Monday(week). Arou
 
 ##Technology
 
--HTML
--CSS
--Javascript
--PSQL
--Node
--Express
--React
--Twilio
+- HTML
+- CSS
+- Javascript
+- PSQL
+- Node
+- Express
+- React
+- Twilio
 
 ##Wireframes
 
@@ -33,9 +33,9 @@ This idea originally came to me around Black Friday and Cyber Monday(week). Arou
 
 ## Under Construction
 
--Using Product API 
---Unfortunately I was unable to go with my orginal plan of using the ebay api to search products. This is due to how the information is displayed using a backend fetch call. 
--Finding Daily Deal API 
---I reached out to several companies regarding the use of their APIs, but have not heard back from any yet. The moment that happens I intend to implement them. 
--User Authorization
---Currently buidling, was unable to finish before current deadline
+- Using Product API 
+-- Unfortunately I was unable to go with my orginal plan of using the ebay api to searh products. This is due to how the information is displayed using a backend fetch call. 
+- Finding Daily Deal API 
+-- I reached out to several companies regarding the use of their APIs, but have not heard back from any yet. The moment that happens I intend to implement them. 
+- User Authorization
+-- Currently buidling, was unable to finish before current deadline
