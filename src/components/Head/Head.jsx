@@ -5,7 +5,7 @@ import style from './Head.css';
 
 export default function Head(props){
   const handleSubmit = () => {
-    // event.preventDefault();
+    event.preventDefault();
 
   this.props.signUpUser(
     event.target.f_name.value,
