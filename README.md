@@ -15,6 +15,10 @@ This idea originally came to me around Black Friday and Cyber Monday(week). Arou
 - React
 - Twilio
 
+##User Story
+
+When the user visits the page, they will see a list of popular products to search through. This will allow the users to get a feel for what products they can search for on the application. As of right now, the product search is powered by eBay so the list of products should be substantial. If the user is not signed in, then they will not be able to search for specific items. They are limited only to the popular products on the first page. If the user is happy with the search they will be able to click the sign-up button, and the sign-up modal will accept the user's credentials. There the user is free to search any product they want and save them to their wishlist.
+
 ##Wireframes
 
 ![main](https://cloud.githubusercontent.com/assets/20092541/21211118/ca9ba56e-c24e-11e6-9422-b4b6638b2c27.png)
@@ -31,7 +35,7 @@ This idea originally came to me around Black Friday and Cyber Monday(week). Arou
 ![screen shot 2016-12-14 at 11 00 13 pm](https://cloud.githubusercontent.com/assets/20092541/21211416/48069174-c251-11e6-95be-2692fdef1d8b.png)
 ![screen shot 2016-12-14 at 11 00 25 pm](https://cloud.githubusercontent.com/assets/20092541/21211419/498c353a-c251-11e6-8c48-9b87a58b4add.png)
 
-## Under Construction
+##Under Construction
 
 - Using Product API : Unfortunately I was unable to go with my orginal plan of using the ebay api to searh products. This is due to how the information is displayed using a backend fetch call. 
 - Finding Daily Deal API : I reached out to several companies regarding the use of their APIs, but have not heard back from any yet. The moment that happens I intend to implement them. 
